@@ -1,0 +1,60 @@
+header.tab {
+	display: inline-block;
+}
+
+.header {
+	background-color: #000000;
+}
+
+
+.hero {
+	background: url(bigstock-Mother-and-Daughter-having-fun-23784977.jpg);
+	width: 1345px;
+	height:600px;
+}
+
+.row  {
+	text-align: center;
+
+}
+
+.redrow {
+	background: red;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.accounts {
+	display: block;
+	text-align: center;
+}
+
+.firstbox {
+	text-align: center;
+	width: 20%;
+	text-align: center;
+}
+
+.secondbox {
+	text-align: center;
+	width: 20%;
+}
+
+.thirdbox {
+	text-align: right;
+	width: 20%;
+}
+
+.blocks {
+	background: #088DA5;
+	text-align: center;
+}
+
+.greybox {
+	background: #d1d3d4;
+	text-align: center;
+}
+
+ul.left {
+	list-style-type: none;
+}
