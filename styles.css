@@ -1,8 +1,8 @@
 .header {
-	background-color: white;
-	padding: 10px 190px 10px;
-	margin-bottom: 10px;
-} 
+	background-color: red;
+	/*padding: 10px 190px 10px;*/
+	
+}
 
 .header ul {
     list-style-type: none;
@@ -12,9 +12,24 @@
     background-color: none;
 }
 
+
+
+/******* NAV *******/
+
+#round {
+	border-radius: 5px;
+    border: 2.5px solid #005754;
+	background-color: none;
+    color: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    cursor: pointer;
+}
+
 .header ul li a  {
-	font-size: .875em; 
-	font-family: 'Ubuntu', sans-serif;  
+	font-size: .875em;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: 500;
 	list-style-type: none;
     color: #005754;
@@ -23,37 +38,56 @@
     float: right;
 }
 
-.logo {
-	position: absolute;
-	left: 100px;
-	top: 10px; 
-}
+/******* GRID *******/
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+	background-color: lightblue ;
+ }
+ .container:before,
+ .container:after {
+   content: ;
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
 
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
 
-#round {
+/*#round {
 	position: absolute;
 	right: 100px;
-	top: 22px; 
+	top: 22px;
 }
-
 #round {
 	border-radius: 5px;
     border: 2.5px solid #005754;
     width: 85px;
     height: 25px;
     position: absolute;
-	background-color: none; 
+	background-color: none;
 }
-
 #round {
   height: 2em;
   display: flex;
   align-items: center;
-  justify-content: center }
+  justify-content: center
+}
 #round {
-  margin: 0 }
+  margin: 0
+}*/
 
 
+
+
+/******* HERO *******/
 .hero {
 	background: url(images/bigstock-Mother-and-Daughter-having-fun-23784977.jpg);
 	width: 1340px;
@@ -86,7 +120,11 @@
     cursor: pointer;
 }
 
-.accounts {
+
+
+
+
+/*.accounts {
 	display: block;
 	text-align: center;
 }
@@ -120,3 +158,17 @@
 ul.left {
 	list-style-type: none;
 }
+
+
+
+
+
+/******* Testimonials *******/
+
+
+
+/*Image slogan*/
+/* h2:: first-line {
+	font-variant: xx-large
+} */
+
