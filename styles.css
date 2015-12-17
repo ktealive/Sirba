@@ -1,7 +1,12 @@
 .header {
 	background-color: red;
-	/*padding: 10px 190px 10px;*/
-
+  padding-bottom: 15px ; 
+  padding-top: 10px;
+  
+  /*Should I use the padding px above or the padding % bellow? */
+  
+  /*padding-bottom: 1.5% ;
+  padding-top: 1%;*/
 }
 
 .header ul {
@@ -9,22 +14,30 @@
     margin:0;
     padding: 0;
     overflow: hidden;
-    background-color: none;
 }
 
-
+/*How do I align the Sign In text and the Sign Up text?*/
 
 /******* NAV *******/
 
-#round {
+.logo {
+  float: left;
+
+}
+
+#round a {
 	border-radius: 5px;
     border: 2.5px solid #005754;
-	background-color: none;
+	 background-color: none;
     color: none;
     text-align: center;
     text-decoration: none;
-    display: inline-block; 
+    float: right; 
     cursor: pointer;
+}
+
+#space a {
+  float: right;
 }
 
 .header ul li a  {
@@ -32,10 +45,11 @@
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 500;
 	list-style-type: none;
-    color: #005754;
-    text-decoration: none;
-    padding: 14px 16px;
-    float: right;
+  color: #005754;
+  text-decoration: none;
+  padding: 14px 16px;
+  
+ 
 }
 
 
@@ -59,7 +73,7 @@
 
  @media (min-width: 768px) {
    .container {
-     width: 750px;
+     width: 950px;
    }
 
 
