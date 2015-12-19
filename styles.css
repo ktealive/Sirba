@@ -2,11 +2,6 @@
 	background-color: red;
   padding-bottom: 15px ; 
   padding-top: 10px;
-  
-  /*Should I use the padding px above or the padding % bellow? */
-  
-  /*padding-bottom: 1.5% ;
-  padding-top: 1%;*/
 }
 
 .header ul {
@@ -16,7 +11,6 @@
     overflow: hidden;
 }
 
-/*How do I align the Sign In text and the Sign Up text?*/
 
 /******* NAV *******/
 
@@ -27,17 +21,18 @@
 
 #round a {
 	border-radius: 5px;
-    border: 2.5px solid #005754;
-	 background-color: none;
-    color: none;
-    text-align: center;
-    text-decoration: none;
-    float: right; 
-    cursor: pointer;
+  border: 3px solid #005754;
+	background-color: none;
+  color: none;
+  text-align: center;
+  text-decoration: none;
+  float: right; 
+  cursor: pointer;
 }
 
 #space a {
   float: right;
+  margin-top: 3px;
 }
 
 .header ul li a  {
@@ -77,39 +72,17 @@
    }
 
 
-/*#round {
-	position: absolute;
-	right: 100px;
-	top: 22px;
-}
-#round {
-	border-radius: 5px;
-    border: 2.5px solid #005754;
-    width: 85px;
-    height: 25px;
-    position: absolute;
-	background-color: none;
-}
-#round {
-  height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-
-
 /******* HERO *******/
 .hero {
 	background: url(images/bigstock-Mother-and-Daughter-having-fun-23784977.jpg);
-	width: 1340px;
-	height:600px;
+	width: 100%;
+	height: 600px;
 }
 
 
 .redrow {
 	background: none;
-	padding: 70px 10px ;
+	padding: 100px 10px ;
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
@@ -118,12 +91,12 @@
 	font-size: 13px;
 }
 
-#submit {
+.button {
+    padding: 15px 90px;
+    border-radius: 8px;
+    border: 2px solid white;
     background-color: #005754;
-    border-radius: 5px;
-   	border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -133,10 +106,89 @@
 }
 
 
+/*******SLOGAN********/
+
+/* 1. For some reason my code below isn't allowing for the entire image to show.
+Above I used the same method and it worked 
+but when I coded the ".slogan" to have an image as a background only a section of the 
+image showed up (the image may be to big...i'm not sure and if it is how can I fix it)
+And code the ".poster" to appear on top of the image like I did above
 
 
+2. I wanted to make an image/photo grid as seen in the link below
+https://mobirise.com/bootstrap-gallery/
+I started coded something already (#photos) below but is there a way to clean up the grid.
+And I also want the ".poster" on top of the image grid as a heading.
 
-/*.accounts {
+.slogan {
+  background: url(images/familycollage.png);
+  width: 30%;
+  height: 600px;
+}*/
+
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+.poster {
+  background: red;
+  padding: 3px 10px;
+  width: 100%;
+  margin: 90px 0px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.try {
+  background: none;
+  padding: 90px 10px ;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.left  {
+  background: none;
+  width: 50%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  float: left;
+  
+ 
+}
+
+.right {
+  background: red;
+  width: 50%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-left: 50%;
+  padding-bottom: 8%;
+}
+/*
+.accounts {
 	display: block;
 	text-align: center;
 }
