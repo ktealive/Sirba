@@ -1,5 +1,5 @@
 .header {
-	background-color: red;
+	background-color: none;
   padding-bottom: 15px ; 
   padding-top: 10px;
 }
@@ -55,7 +55,8 @@
    padding-left: 15px;
    padding-right: 15px;
    position: relative;
-	background-color: lightblue ;
+	background-color: none;
+
  }
  .container:before,
  .container:after {
@@ -70,6 +71,10 @@
    .container {
      width: 950px;
    }
+/******GRID********/
+
+
+
 
 
 /******* HERO *******/
@@ -80,7 +85,7 @@
 }
 
 
-.redrow {
+.heroshot {
 	background: none;
 	padding: 100px 10px ;
 	margin: 0 auto;
@@ -108,52 +113,38 @@
 
 /*******SLOGAN********/
 
-/* 1. For some reason my code below isn't allowing for the entire image to show.
-Above I used the same method and it worked 
-but when I coded the ".slogan" to have an image as a background only a section of the 
-image showed up (the image may be to big...i'm not sure and if it is how can I fix it)
-And code the ".poster" to appear on top of the image like I did above
-
-
-2. I wanted to make an image/photo grid as seen in the link below
-https://mobirise.com/bootstrap-gallery/
-I started coded something already (#photos) below but is there a way to clean up the grid.
-And I also want the ".poster" on top of the image grid as a heading.
-
-.slogan {
-  background: url(images/familycollage.png);
-  width: 30%;
-  height: 600px;
-}*/
-
-
-#photos {
-  /* Prevent vertical gaps */
-  line-height: 0;
-   
-  -webkit-column-count: 5;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    5;
-  -moz-column-gap:      0px;
-  column-count:         5;
-  column-gap:           0px;  
-}
-
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-}
-
-.poster {
-  background: red;
-  padding: 3px 10px;
+ .slogan {
+  background: url(images/familycollage-01.png);
+  background-size: cover;
+  background-position: center center;
   width: 100%;
-  margin: 90px 0px;
+  height: 400px;
+ } 
+
+ .line {
+  width: 100%;
+    /* margin: 90px 0px; */
+    position: relative;
+ }
+  
+.poster {
+  background: white;
+  opacity: 0.8;
+  margin: 0 auto;
+  position: relative;
+  top: 160px;
+  padding: 1px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 13px;
+
+}
+
+
+/*********TRY*******/
+.contain {
+  background-color: #d8d8d8;
 }
 
 .try {
@@ -165,6 +156,8 @@ And I also want the ".poster" on top of the image grid as a heading.
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .left  {
@@ -174,7 +167,6 @@ And I also want the ".poster" on top of the image grid as a heading.
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   float: left;
-  
  
 }
 
@@ -187,46 +179,148 @@ And I also want the ".poster" on top of the image grid as a heading.
   margin-left: 50%;
   padding-bottom: 8%;
 }
-/*
+
+
+
+
+/*********ACCOUNTS***********/
+
 .accounts {
-	display: block;
-	text-align: center;
+  background-color: white;
+}
+
+.heading {
+  text-align: center;
+  background-color: green;
+}
+
+.price {
+  background-color: violet;
+  margin: 0 auto;
+  padding-top: 10px;
+  height: 600px;
 }
 
 .firstbox {
-	text-align: center;
-	width: 20%;
-	text-align: center;
+  margin-left: 6%;
+  width: 26%;  
+  position: relative;
+  top: 80px;
 }
 
 .secondbox {
-	text-align: center;
-	width: 20%;
+  margin: 0 auto;
+  width: 26%;
+  text-align: center;
+  position: relative;
+  bottom: 290px;
 }
 
 .thirdbox {
-	text-align: right;
-	width: 20%;
-}
-
-.blocks {
-	background: #088DA5;
-	text-align: center;
-}
-
-.greybox {
-	background: #d1d3d4;
-	text-align: center;
-}
-
-ul.left {
-	list-style-type: none;
+  margin-left: 68%;
+  width: 26%;
+  text-align: center;
+  position: relative;
+  bottom: 658px;
+  
 }
 
 
+.first {
+ 
+  text-align: center;
+  background-color: #d8d8d8;
+  padding-bottom: 3px;
+}
 
-/*Image slogan*/
-/* h2:: first-line {
-	font-variant: xx-large
-} */
+.list {
+  padding-top: 10px;
+}
+
+
+
+.first h3 {
+  background-color: #005754;
+  padding: 10px 0px;
+  color: white;
+}
+
+.first h1 {
+  color: #005754;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10px;
+}
+
+
+.mid {
+ 
+  text-align: center;
+  background-color: #d8d8d8;
+  padding-bottom: 3px;
+}
+
+.midbox {
+  padding-top: 10px;
+}
+
+.mid h3 {
+  background-color: #005754;
+  padding: 10px 0px;
+  color: white;
+}
+
+.mid h1 {
+  color: #005754;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 10px;
+}
+
+
+.trial {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 580px;
+  padding: 1px 0px;
+  width: 30%;
+  color: white;
+  background-color: #005754;
+}
+
+
+
+/********footer**********/
+
+.footer {
+  background-color: #3c3c3b;
+  padding: 40px 40px;
+}
+
+.text {
+    list-style-type: none;
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+
+.text li {
+  display: inline;
+  padding: 5px 5px;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.text li a {
+    color: white;
+    text-align: none;
+    text-decoration: none;
+}
+
+.links {
+  margin-left: 90%
+}
 
