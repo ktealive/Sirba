@@ -143,6 +143,10 @@
 
 
 /*********TRY*******/
+
+/* Also the arrow pointing to the sirba sign below "give it a try" 
+how should I incorporate that into the code. Should I code an image or is ther another way?*/
+
 .contain {
   background-color: #d8d8d8;
 }
@@ -158,6 +162,14 @@
   font-size: 30px;
   padding-bottom: 10px;
   padding-top: 20px;
+}
+
+.try p {
+  margin: 0px;
+}
+
+.color {
+  color: #005754;
 }
 
 .left  {
@@ -185,19 +197,30 @@
 
 /*********ACCOUNTS***********/
 
+/* I'm trying to figure out why there is a gap between the container "heading" & the container "price" 
+I tried finding where the gap is coming from maybe its a margin from something. I'm not sure*/
+
 .accounts {
   background-color: white;
 }
 
 .heading {
+  padding-top: 30px;
   text-align: center;
   background-color: green;
+}
+
+.heading h1 {
+  margin: 0px;
+}
+
+.heading p {
+  margin: 0px;
 }
 
 .price {
   background-color: violet;
   margin: 0 auto;
-  padding-top: 10px;
   height: 600px;
 }
 
@@ -304,6 +327,9 @@
     padding: 0;
     overflow: hidden;
     color: white;
+    top: 20px;
+    position: relative;
+    padding-left: 20px;
 }
 
 .text li {
@@ -311,6 +337,7 @@
   padding: 5px 5px;
   font-size: 11px;
   font-family: 'Open Sans', sans-serif;
+
 
 }
 
