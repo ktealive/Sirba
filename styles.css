@@ -1,6 +1,6 @@
 .header {
 	background-color: none;
-  padding-bottom: 15px ; 
+  padding-bottom: 15px ;
   padding-top: 10px;
 }
 
@@ -26,7 +26,7 @@
   color: none;
   text-align: center;
   text-decoration: none;
-  float: right; 
+  float: right;
   cursor: pointer;
 }
 
@@ -43,8 +43,8 @@
   color: #005754;
   text-decoration: none;
   padding: 14px 16px;
-  
- 
+
+
 }
 
 
@@ -55,7 +55,7 @@
    padding-left: 15px;
    padding-right: 15px;
    position: relative;
-	background-color: none;
+	 background-color: none;
 
  }
  .container:before,
@@ -67,10 +67,39 @@
    clear: both;
  }
 
+ .one-third {
+	 width: 96%;
+	 float: left;
+	 position:relative;
+	 min-height: 1px;
+	 margin:0 2% 20px;
+ }
+
  @media (min-width: 768px) {
-   .container {
-     width: 950px;
-   }
+	 .container {
+		 width: 748px;
+	 }
+	 .one-third {
+		 width: 46%;
+	 }
+
+ }
+
+ @media (min-width: 992px) {
+	 .container {
+      width: 970px;
+    }
+    .one-half {
+      width:46%;
+    }
+    .one-third {
+      width:29.33333%;
+    }
+    .one-fourth {
+      width:21%;
+    }
+
+  }
 /******GRID********/
 
 
@@ -119,14 +148,14 @@
   background-position: center center;
   width: 100%;
   height: 400px;
- } 
+ }
 
  .line {
   width: 100%;
     /* margin: 90px 0px; */
     position: relative;
  }
-  
+
 .poster {
   background: white;
   opacity: 0.8;
@@ -144,7 +173,7 @@
 
 /*********TRY*******/
 
-/* Also the arrow pointing to the sirba sign below "give it a try" 
+/* Also the arrow pointing to the sirba sign below "give it a try"
 how should I incorporate that into the code. Should I code an image or is ther another way?*/
 
 .contain {
@@ -179,7 +208,7 @@ how should I incorporate that into the code. Should I code an image or is ther a
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   float: left;
- 
+
 }
 
 .right {
@@ -197,17 +226,21 @@ how should I incorporate that into the code. Should I code an image or is ther a
 
 /*********ACCOUNTS***********/
 
-/* I'm trying to figure out why there is a gap between the container "heading" & the container "price" 
+/* I'm trying to figure out why there is a gap between the container "heading" & the container "price"
 I tried finding where the gap is coming from maybe its a margin from something. I'm not sure*/
 
 .accounts {
-  background-color: white;
+  background-color: pink;
+	width: 100%;
+	float: left;
 }
 
 .heading {
-  padding-top: 30px;
+  padding: 30px 0px;
   text-align: center;
   background-color: green;
+	width: 100%;
+	float: left;
 }
 
 .heading h1 {
@@ -221,12 +254,28 @@ I tried finding where the gap is coming from maybe its a margin from something. 
 .price {
   background-color: violet;
   margin: 0 auto;
-  height: 600px;
+	/*beware of hard coding heights*/
+  /*height: 600px;*/
+}
+
+.box {
+	margin: 20px 2% 10px 2%;
+	background-color: #dadada;
+	min-height: 200px;
+	text-align: center;
+}
+
+.casual, .expert {
+	margin-top: 40px;
+}
+
+.pro {
+	min-height: 240px;
 }
 
 .firstbox {
   margin-left: 6%;
-  width: 26%;  
+  width: 26%;
   position: relative;
   top: 80px;
 }
@@ -245,12 +294,12 @@ I tried finding where the gap is coming from maybe its a margin from something. 
   text-align: center;
   position: relative;
   bottom: 658px;
-  
+
 }
 
 
 .first {
- 
+
   text-align: center;
   background-color: #d8d8d8;
   padding-bottom: 3px;
@@ -276,7 +325,7 @@ I tried finding where the gap is coming from maybe its a margin from something. 
 
 
 .mid {
- 
+
   text-align: center;
   background-color: #d8d8d8;
   padding-bottom: 3px;
@@ -299,8 +348,16 @@ I tried finding where the gap is coming from maybe its a margin from something. 
 }
 
 
-.trial {
-  text-align: center;
+.trial-button p {
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	margin: 10px auto;
+	/*padding:10px 30px;
+	background: #2ECC71;
+	border: 2px solid #2ECC71;
+	box-shadow: 0px 2px 0px 0px #22894E;*/
+  /*text-align: center;
   width: 60%;
   margin: 0 auto;
   position: relative;
@@ -350,4 +407,3 @@ I tried finding where the gap is coming from maybe its a margin from something. 
 .links {
   margin-left: 90%
 }
-
