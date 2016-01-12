@@ -43,8 +43,6 @@
   color: #005754;
   text-decoration: none;
   padding: 14px 16px;
-
-
 }
 
 
@@ -67,13 +65,17 @@
    clear: both;
  }
 
- .one-third {
+/*why did the background turn black grey when I inserted ".one-half" down below
+I think it has sometihng to do with the .footer container 
+but I'm not sure what could be causing it*/
+ .one-third, .one-half {
 	 width: 96%;
 	 float: left;
 	 position:relative;
 	 min-height: 1px;
 	 margin:0 2% 20px;
  }
+
 
  @media (min-width: 768px) {
 	 .container {
@@ -83,7 +85,7 @@
 		 width: 46%;
 	 }
 
- }
+
 
  @media (min-width: 992px) {
 	 .container {
@@ -98,8 +100,6 @@
     .one-fourth {
       width:21%;
     }
-
-  }
 /******GRID********/
 
 
@@ -173,9 +173,8 @@
 
 /*********TRY*******/
 
-/* Also the arrow pointing to the sirba sign below "give it a try"
-how should I incorporate that into the code. Should I code an image or is ther another way?*/
-
+/*I also have a question about the arrow. When I added the image in.
+It offset the logo. So I can I recenter the logo again*/
 .contain {
   background-color: #d8d8d8;
 }
@@ -201,33 +200,28 @@ how should I incorporate that into the code. Should I code an image or is ther a
   color: #005754;
 }
 
-.left  {
-  background: none;
-  width: 50%;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  float: left;
+.one-half {
+    margin: 30px 2% 30px 2%;
+    background-color: pink;
+    min-height: 150px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
 
+.left  {
+  
+ 
 }
 
 .right {
-  background: red;
-  width: 50%;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  margin-left: 50%;
-  padding-bottom: 8%;
+ 
+  
 }
 
 
 
-
-/*********ACCOUNTS***********/
-
-/* I'm trying to figure out why there is a gap between the container "heading" & the container "price"
-I tried finding where the gap is coming from maybe its a margin from something. I'm not sure*/
+/******ACCOUNTS*******/
 
 .accounts {
   background-color: pink;
@@ -251,12 +245,6 @@ I tried finding where the gap is coming from maybe its a margin from something. 
   margin: 0px;
 }
 
-.price {
-  background-color: violet;
-  margin: 0 auto;
-	/*beware of hard coding heights*/
-  /*height: 600px;*/
-}
 
 .box {
 	margin: 20px 2% 10px 2%;
@@ -269,109 +257,45 @@ I tried finding where the gap is coming from maybe its a margin from something. 
 	margin-top: 40px;
 }
 
+.casual h3, .expert h3 {
+  background-color: #005754;
+  padding: 10px 0px;
+  color: white;
+  margin: 0px;
+}
+
+.casual h1, .pro h1, .expert h1 {
+  color: #005754;
+}
+
 .pro {
 	min-height: 240px;
 }
 
-.firstbox {
-  margin-left: 6%;
-  width: 26%;
-  position: relative;
-  top: 80px;
-}
-
-.secondbox {
-  margin: 0 auto;
-  width: 26%;
-  text-align: center;
-  position: relative;
-  bottom: 290px;
-}
-
-.thirdbox {
-  margin-left: 68%;
-  width: 26%;
-  text-align: center;
-  position: relative;
-  bottom: 658px;
-
-}
-
-
-.first {
-
-  text-align: center;
-  background-color: #d8d8d8;
-  padding-bottom: 3px;
-}
-
-.list {
-  padding-top: 10px;
-}
-
-
-
-.first h3 {
+.pro h3 {
   background-color: #005754;
   padding: 10px 0px;
   color: white;
-}
-
-.first h1 {
-  color: #005754;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 10px;
+  margin: 0px;
 }
 
 
-.mid {
 
-  text-align: center;
-  background-color: #d8d8d8;
-  padding-bottom: 3px;
-}
-
-.midbox {
-  padding-top: 10px;
-}
-
-.mid h3 {
-  background-color: #005754;
-  padding: 10px 0px;
-  color: white;
-}
-
-.mid h1 {
-  color: #005754;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 10px;
-}
-
-
-.trial-button p {
+/*For some reason I can't get the trial button to center. 
+Since it's in a div I thought it would be on its own row*/
+.trial-button {
 	position: relative;
 	text-align: center;
 	padding: 10px;
 	margin: 10px auto;
-	/*padding:10px 30px;
-	background: #2ECC71;
-	border: 2px solid #2ECC71;
-	box-shadow: 0px 2px 0px 0px #22894E;*/
-  /*text-align: center;
-  width: 60%;
-  margin: 0 auto;
-  position: relative;
-  bottom: 580px;
-  padding: 1px 0px;
-  width: 30%;
-  color: white;
   background-color: #005754;
+  color: white;
+  display: inline-block;
 }
+ 
 
 
-
-/********footer**********/
-
+/********FOOTER*********/
 .footer {
   background-color: #3c3c3b;
   padding: 40px 40px;
@@ -394,8 +318,6 @@ I tried finding where the gap is coming from maybe its a margin from something. 
   padding: 5px 5px;
   font-size: 11px;
   font-family: 'Open Sans', sans-serif;
-
-
 }
 
 .text li a {
