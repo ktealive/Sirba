@@ -192,6 +192,13 @@ It offset the logo. So I can I recenter the logo again*/
   padding-top: 20px;
 }
 
+.arrow {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 305px;
+}
+
 .try p {
   margin: 0px;
 }
@@ -199,6 +206,8 @@ It offset the logo. So I can I recenter the logo again*/
 .color {
   color: #005754;
 }
+
+
 
 .one-half {
     margin: 30px 2% 30px 2%;
