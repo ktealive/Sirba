@@ -205,8 +205,12 @@ It offset the logo. So I can I recenter the logo again*/
   padding-top: 20px;
 }
 
-.try p {
-  margin: 0px;
+.color {
+  margin: 0;
+} 
+
+.trytitle {
+  margin: 40px 0px 0px 0px;
 }
 
 .color {
@@ -214,8 +218,8 @@ It offset the logo. So I can I recenter the logo again*/
 }
 
 .one-half {
-    margin: 30px 2% 30px 2%;
-    background-color: pink;
+    margin: 10px 2% 70px 2%;
+    background-color: none;
     min-height: 150px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -237,11 +241,19 @@ It offset the logo. So I can I recenter the logo again*/
 /******ACCOUNTS*******/
 
 .accounts {
-	background-color: purple;
+	background-color: #FFFFFF;
 	float: left;
 	padding: 50px 0;
 	text-align: center;
 	width: 100%;
+}
+
+.types {
+  margin: 10px 0px 0px 0px;
+}
+
+.free {
+
 }
 
 .box {
@@ -289,8 +301,8 @@ Since it's in a div I thought it would be on its own row*/
 .trial-button {
 	position: relative;
 	text-align: center;
-	padding: 10px;
-	margin: 10px auto;
+	padding: 10px 100px 10px 100px;
+	margin: 20px 0px 0px 0px;;
   background-color: #005754;
   color: white;
   display: inline-block;
@@ -340,4 +352,12 @@ footer {
 
 .links img:hover {
 	color: green;
+}
+
+.fa-facebook {
+  color: #000000;
+}
+
+.fa-twitter {
+  color: #000000;
 }
