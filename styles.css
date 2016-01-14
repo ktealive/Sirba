@@ -1,14 +1,24 @@
 .header {
+<<<<<<< HEAD
 	background-color: white;
 	padding: 10px 190px 10px;
 	margin-bottom: 10px;
 } 
+=======
+	background-color: none;
+  padding-bottom: 15px ;
+  padding-top: 10px;
+	width: 100%;
+	float: left;
+}
+>>>>>>> mentor_jan13
 
 .header ul {
     list-style-type: none;
     margin:0;
     padding: 0;
     overflow: hidden;
+<<<<<<< HEAD
     background-color: none;
 }
 
@@ -64,6 +74,117 @@
 .redrow {
 	background: none;
 	padding: 70px 10px ;
+=======
+}
+
+
+/******* NAV *******/
+
+.logo {
+  float: left;
+
+}
+
+#round a {
+	border-radius: 5px;
+  border: 3px solid #005754;
+	background-color: none;
+  color: none;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  cursor: pointer;
+}
+
+#space a {
+  float: right;
+  margin-top: 3px;
+}
+
+.header ul li a  {
+	font-size: .875em;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	list-style-type: none;
+  color: #005754;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+
+/******* GRID *******/
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+	 background-color: none;
+
+ }
+ .container:before,
+ .container:after {
+   content: ;
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+
+/*why did the background turn black grey when I inserted ".one-half" down below
+I think it has sometihng to do with the .footer container
+but I'm not sure what could be causing it*/
+ .one-third, .one-half {
+	 width: 96%;
+	 float: left;
+	 position:relative;
+	 min-height: 1px;
+	 margin:0 2% 20px;
+ }
+
+
+ @media (min-width: 768px) {
+	 .container {
+		 width: 748px;
+	 }
+	 .one-third {
+		 width: 46%;
+	 }
+
+
+
+ @media (min-width: 992px) {
+	 .container {
+      width: 970px;
+    }
+    .one-half {
+      width:46%;
+    }
+    .one-third {
+      width:29.33333%;
+    }
+    .one-fourth {
+      width:21%;
+    }
+/******GRID********/
+
+
+
+
+
+/******* HERO *******/
+.hero {
+	background: url(images/bigstock-Mother-and-Daughter-having-fun-23784977.jpg);
+	width: 100%;
+	height: 600px;
+	float: left;
+}
+
+
+.heroshot {
+	background: none;
+	padding: 100px 10px ;
+>>>>>>> mentor_jan13
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
@@ -72,12 +193,21 @@
 	font-size: 13px;
 }
 
+<<<<<<< HEAD
 #submit {
     background-color: #005754;
     border-radius: 5px;
    	border: none;
     color: white;
     padding: 15px 32px;
+=======
+.button {
+    padding: 15px 90px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: #005754;
+    color: white;
+>>>>>>> mentor_jan13
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -86,6 +216,7 @@
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .accounts {
 	display: block;
 	text-align: center;
@@ -120,3 +251,227 @@
 ul.left {
 	list-style-type: none;
 }
+=======
+
+/*******SLOGAN********/
+
+ .slogan {
+  background: url(images/familycollage-01.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+	float: left;
+ }
+
+ .line {
+  width: 100%;
+    /* margin: 90px 0px; */
+    position: relative;
+ }
+
+.poster {
+  background: white;
+  opacity: 0.8;
+  margin: 0 auto;
+  position: relative;
+  top: 160px;
+  padding: 1px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+
+}
+
+
+/*********TRY*******/
+
+/*I also have a question about the arrow. When I added the image in.
+It offset the logo. So I can I recenter the logo again*/
+.contain {
+  background-color: #d8d8d8;
+	float: left;
+	width: 100%;
+}
+
+.arrow {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 305px;
+}
+
+.try {
+  background: none;
+  padding: 90px 10px ;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.color {
+  margin: 0;
+} 
+
+.trytitle {
+  margin: 40px 0px 0px 0px;
+}
+
+.color {
+  color: #005754;
+}
+
+.one-half {
+    margin: 10px 2% 70px 2%;
+    background-color: none;
+    min-height: 150px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.left  {
+
+
+}
+
+.right {
+
+
+}
+
+
+
+/******ACCOUNTS*******/
+
+.accounts {
+	background-color: #FFFFFF;
+	float: left;
+	padding: 50px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.types {
+  margin: 10px 0px 0px 0px;
+}
+
+.free {
+
+}
+
+.box {
+	margin: 20px 2% 10px 2%;
+	background-color: #dadada;
+	min-height: 200px;
+	text-align: center;
+}
+
+.casual, .expert {
+	margin-top: 40px;
+}
+
+.casual h3, .expert h3 {
+  background-color: #005754;
+  padding: 10px 0px;
+  color: white;
+  margin: 0px;
+}
+
+.casual h1, .pro h1, .expert h1 {
+  color: #005754;
+}
+
+.pro {
+	min-height: 240px;
+}
+
+.pro h3 {
+  background-color: #005754;
+  padding: 10px 0px;
+  color: white;
+  margin: 0px;
+}
+
+.prices {
+	float: left;
+	width: 100%;
+}
+
+
+
+/*For some reason I can't get the trial button to center.
+Since it's in a div I thought it would be on its own row*/
+.trial-button {
+	position: relative;
+	text-align: center;
+	padding: 10px 100px 10px 100px;
+	margin: 20px 0px 0px 0px;;
+  background-color: #005754;
+  color: white;
+  display: inline-block;
+}
+
+/********FOOTER*********/
+footer {
+  background-color: #3c3c3b;
+  padding: 40px 0px 80px 0px;
+	float: left;
+	width: 100%;
+}
+
+.text {
+    list-style-type: none;
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    top: 20px;
+    padding-left: 20px;
+		float: left;
+}
+
+.text li {
+  display: inline;
+  padding: 5px 5px;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text li a {
+    color: white;
+    text-align: none;
+    text-decoration: none;
+}
+
+.links {
+  float: right;
+}
+
+.links img {
+	margin-left: 20px;
+	width: 20px;
+}
+
+.links img:hover {
+	color: green;
+}
+
+
+/*I want to change the color of the icons is this coding right?*/
+
+.fa-facebook {
+  color: #000000;
+}
+
+.fa-twitter {
+  color: #000000;
+}
+>>>>>>> mentor_jan13
