@@ -1,80 +1,16 @@
 .header {
-<<<<<<< HEAD
-	background-color: white;
-	padding: 10px 190px 10px;
-	margin-bottom: 10px;
-} 
-=======
 	background-color: none;
   padding-bottom: 15px ;
   padding-top: 10px;
 	width: 100%;
 	float: left;
 }
->>>>>>> mentor_jan13
 
 .header ul {
     list-style-type: none;
     margin:0;
     padding: 0;
     overflow: hidden;
-<<<<<<< HEAD
-    background-color: none;
-}
-
-.header ul li a  {
-	font-size: .875em; 
-	font-family: 'Ubuntu', sans-serif;  
-	font-weight: 500;
-	list-style-type: none;
-    color: #005754;
-    text-decoration: none;
-    padding: 14px 16px;
-    float: right;
-}
-
-.logo {
-	position: absolute;
-	left: 100px;
-	top: 10px; 
-}
-
-
-#round {
-	position: absolute;
-	right: 100px;
-	top: 22px; 
-}
-
-#round {
-	border-radius: 5px;
-    border: 2.5px solid #005754;
-    width: 85px;
-    height: 25px;
-    position: absolute;
-	background-color: none; 
-}
-
-#round {
-  height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center }
-#round {
-  margin: 0 }
-
-
-.hero {
-	background: url(images/bigstock-Mother-and-Daughter-having-fun-23784977.jpg);
-	width: 1340px;
-	height:600px;
-}
-
-
-.redrow {
-	background: none;
-	padding: 70px 10px ;
-=======
 }
 
 
@@ -184,7 +120,6 @@ but I'm not sure what could be causing it*/
 .heroshot {
 	background: none;
 	padding: 100px 10px ;
->>>>>>> mentor_jan13
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
@@ -193,21 +128,13 @@ but I'm not sure what could be causing it*/
 	font-size: 13px;
 }
 
-<<<<<<< HEAD
-#submit {
-    background-color: #005754;
-    border-radius: 5px;
-   	border: none;
-    color: white;
-    padding: 15px 32px;
-=======
+
 .button {
     padding: 15px 90px;
     border-radius: 8px;
     border: 2px solid white;
     background-color: #005754;
     color: white;
->>>>>>> mentor_jan13
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -216,42 +143,6 @@ but I'm not sure what could be causing it*/
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-.accounts {
-	display: block;
-	text-align: center;
-}
-
-.firstbox {
-	text-align: center;
-	width: 20%;
-	text-align: center;
-}
-
-.secondbox {
-	text-align: center;
-	width: 20%;
-}
-
-.thirdbox {
-	text-align: right;
-	width: 20%;
-}
-
-.blocks {
-	background: #088DA5;
-	text-align: center;
-}
-
-.greybox {
-	background: #d1d3d4;
-	text-align: center;
-}
-
-ul.left {
-	list-style-type: none;
-}
-=======
 
 /*******SLOGAN********/
 
@@ -474,4 +365,4 @@ footer {
 .fa-twitter {
   color: #000000;
 }
->>>>>>> mentor_jan13
+
