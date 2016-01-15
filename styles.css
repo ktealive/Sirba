@@ -67,9 +67,6 @@
    clear: both;
  }
 
-/*why did the background turn black grey when I inserted ".one-half" down below
-I think it has sometihng to do with the .footer container
-but I'm not sure what could be causing it*/
  .one-third, .one-half {
 	 width: 96%;
 	 float: left;
@@ -83,9 +80,10 @@ but I'm not sure what could be causing it*/
 	 .container {
 		 width: 748px;
 	 }
-	 .one-third {
+  }
+	 /*.one-third {
 		 width: 46%;
-	 }
+	 }*/
 
 
 
@@ -102,6 +100,13 @@ but I'm not sure what could be causing it*/
     .one-fourth {
       width:21%;
     }
+  }
+
+  @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
 /******GRID********/
 
 
@@ -172,14 +177,19 @@ but I'm not sure what could be causing it*/
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 13px;
-
 }
 
+.poster h2 {
+  font-size: 23px;
+}
+
+.poster h2::first-line {
+  color: #000000;
+    font-size: xx-large;
+} 
 
 /*********TRY*******/
 
-/*I also have a question about the arrow. When I added the image in.
-It offset the logo. So I can I recenter the logo again*/
 .contain {
   background-color: #d8d8d8;
 	float: left;
@@ -249,9 +259,15 @@ It offset the logo. So I can I recenter the logo again*/
 	width: 100%;
 }
 
-.types {
-  margin: 10px 0px 0px 0px;
+.types::first-line {
+  color: #000000;
+  font-size: xx-large;
+  font-family: 'Open Sans', sans-serif;
 }
+
+/*.types {
+  margin: 10px 0px 0px 0px;
+}*/
 
 .free {
 
@@ -296,9 +312,6 @@ It offset the logo. So I can I recenter the logo again*/
 }
 
 
-
-/*For some reason I can't get the trial button to center.
-Since it's in a div I thought it would be on its own row*/
 .trial-button {
 	position: relative;
 	text-align: center;
@@ -308,6 +321,8 @@ Since it's in a div I thought it would be on its own row*/
   color: white;
   display: inline-block;
 }
+
+
 
 /********FOOTER*********/
 footer {
