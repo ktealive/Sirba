@@ -116,9 +116,17 @@
 /******* HERO *******/
 .hero {
 	background: url(images/bigstock-Mother-and-Daughter-having-fun-23784977.jpg);
+	background-position: -500px 0;
+	background-size: cover;
 	width: 100%;
-	height: 600px;
 	float: left;
+}
+
+@media (min-width: 768px) {
+	.hero {
+		background-position: center center;
+		height: 600px;
+	}
 }
 
 
@@ -186,7 +194,7 @@
 .poster h2::first-line {
   color: #000000;
     font-size: xx-large;
-} 
+}
 
 /*********TRY*******/
 
@@ -198,16 +206,15 @@
 
 .arrow {
 	position: absolute;
-	height: 100px;
-	width: 100px;
-	left: 305px;
+	width: 60px;
+	left: 22%;
 }
 
 .try {
   background: none;
   padding: 90px 10px ;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -216,9 +223,22 @@
   padding-top: 20px;
 }
 
+
+/*targeting tablet devices*/
+@media (min-width: 768px) {
+	.arrow {
+		width: 90px;
+		left: 25%;
+	}
+
+	.try {
+	  width: 80%;
+	}
+}
+
 .color {
   margin: 0;
-} 
+}
 
 .trytitle {
   margin: 40px 0px 0px 0px;
@@ -380,4 +400,3 @@ footer {
 .fa-twitter {
   color: #000000;
 }
-
