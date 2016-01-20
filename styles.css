@@ -75,16 +75,18 @@
 	 margin:0 2% 20px;
  }
 
+ @media (min-width: 375px) {
+   .container {
+     width: 355px;
+   }
+  }
 
  @media (min-width: 768px) {
 	 .container {
 		 width: 748px;
 	 }
   }
-	 /*.one-third {
-		 width: 46%;
-	 }*/
-
+	
 
 
  @media (min-width: 992px) {
@@ -122,6 +124,13 @@
 	float: left;
 }
 
+@media (min-width: 375px) {
+   .hero {
+     background-position: center center;
+     height: 600px;
+   }
+  }
+
 @media (min-width: 768px) {
 	.hero {
 		background-position: center center;
@@ -138,8 +147,24 @@
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 0.8125em;
 }
+
+@media (min-width: 375px) { /*mobiel/phone*/
+  .hershot {
+    font-size: 0.3125em;
+    
+  }
+}
+
+@media (min-width: 768px) { /*tablet*/
+  .heroshot {
+    font-size: 0.6250em;
+    width: 60%;
+    
+  }
+}
+
 
 
 .button {
@@ -154,6 +179,7 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+
 }
 
 
@@ -259,15 +285,15 @@
 
 .left  {
 
-
 }
 
 .right {
 
-
 }
 
-
+.fa-youtube-square, .fa-facebook-square, .left.fa-twitter,.fa-camera-retro, .fa-file-o, .fa-picture-o, .fa-link {
+  color: #4f4f4f;
+}
 
 /******ACCOUNTS*******/
 
@@ -391,12 +417,8 @@ footer {
 }
 
 
-/*I want to change the color of the icons is this coding right?*/
 
-.fa-facebook {
-  color: #000000;
+.fa-facebook, .fa-twitter {
+  color: #FFFFFF;
 }
 
-.fa-twitter {
-  color: #000000;
-}
