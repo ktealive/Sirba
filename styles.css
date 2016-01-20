@@ -150,12 +150,7 @@
 	font-size: 0.8125em;
 }
 
-@media (min-width: 375px) { /*mobiel/phone*/
-  .hershot {
-    font-size: 0.3125em;
-    
-  }
-}
+
 
 @media (min-width: 768px) { /*tablet*/
   .heroshot {
