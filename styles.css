@@ -1,3 +1,30 @@
+.right i {
+	min-width: 75px;
+}
+
+ul.icons {
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0px;
+}
+
+.icons li {
+	margin: 0 10px;
+	padding: 10px;
+	/*background-color: #bbbbbb;*/
+	border-radius: 4px;
+	min-width: 65px;
+	display: inline-block;
+}
+
+/*.icons li:hover {
+	background-color: #ffffff;
+}*/
+
+.right i:hover {
+	color: #ff0000;
+}
+
 .header {
 	background-color: none;
   padding-bottom: 15px ;
@@ -86,7 +113,7 @@
 		 width: 748px;
 	 }
   }
-	
+
 
 
  @media (min-width: 992px) {
@@ -153,7 +180,7 @@
 @media (min-width: 375px) { /*mobiel/phone*/
   .hershot {
     font-size: 0.3125em;
-    
+
   }
 }
 
@@ -161,7 +188,7 @@
   .heroshot {
     font-size: 0.6250em;
     width: 60%;
-    
+
   }
 }
 
@@ -291,8 +318,8 @@
 
 }
 
-.fa-youtube-square, .fa-facebook-square, .left.fa-twitter,.fa-camera-retro, .fa-file-o, .fa-picture-o, .fa-link {
-  color: #4f4f4f;
+.fa-youtube-square, .fa-facebook-square, .contain .fa-twitter, .fa-camera-retro, .fa-file-o, .fa-picture-o, .fa-link {
+  color: green;
 }
 
 /******ACCOUNTS*******/
@@ -421,4 +448,3 @@ footer {
 .fa-facebook, .fa-twitter {
   color: #FFFFFF;
 }
-
