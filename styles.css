@@ -458,13 +458,13 @@ footer {
 }
 
 .personal, .professional {
-  border-radius: 5px;
+  border-radius: 8px;
   border: 3px solid #FFFFFF;
   background-color: none;
   color: none;
   text-align: center;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 12px;
 }
 
 
