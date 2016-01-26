@@ -417,3 +417,82 @@ footer {
   color: #FFFFFF;
 }
 
+
+
+
+
+/***************Dashboard*************/
+/*.dashheader {
+  background-color: #005754; 
+}*/
+
+.dashnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px 0px 35px 0px;
+    overflow: hidden;
+    background-color: #005754;
+  }
+
+.dashnav li {
+    float: left;
+  }
+
+.dashnav li a {
+    /*display: block;*/
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: .875em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.dashnav li a:hover:not(.active) {
+    color: #ff8b4c;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.personal, .professional {
+  border-radius: 5px;
+  border: 3px solid #FFFFFF;
+  background-color: none;
+  color: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+
+.name {
+   float: right;
+}
+
+
+
+.secondline {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px 0px 35px 0px;
+    overflow: hidden;
+    background-color: red;
+  }
+
+.secondline li {
+    float: left;
+  }
+
+.dashline li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: .875em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+  }
