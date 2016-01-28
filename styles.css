@@ -1,6 +1,6 @@
-.right i {
+/*.right i {
 	min-width: 75px;
-}
+}*/
 
 ul.icons {
 	list-style-type: none;
@@ -11,19 +11,25 @@ ul.icons {
 .icons li {
 	margin: 0 10px;
 	padding: 10px;
-	/*background-color: #bbbbbb;*/
 	border-radius: 4px;
 	min-width: 65px;
 	display: inline-block;
+}
+
+.right li {
+  margin: 0 10px;
+  border-radius: 4px;
+  min-width: 65px;
+  display: inline-block;
 }
 
 /*.icons li:hover {
 	background-color: #ffffff;
 }*/
 
-.right i:hover {
+/*.right i:hover {
 	color: #ff0000;
-}
+}*/
 
 .header {
 	background-color: none;
@@ -319,7 +325,7 @@ ul.icons {
 }
 
 .fa-youtube-square, .fa-facebook-square, .contain .fa-twitter, .fa-camera-retro, .fa-file-o, .fa-picture-o, .fa-link {
-  color: green;
+  color: #5c5c5c;
 }
 
 /******ACCOUNTS*******/
