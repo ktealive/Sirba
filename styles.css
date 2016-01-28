@@ -86,7 +86,7 @@
 		 width: 748px;
 	 }
   }
-	
+
 
 
  @media (min-width: 992px) {
@@ -156,7 +156,7 @@
   .heroshot {
     font-size: 0.6250em;
     width: 60%;
-    
+
   }
 }
 
@@ -423,20 +423,33 @@ footer {
 
 /***************Dashboard*************/
 /*.dashheader {
-  background-color: #005754; 
+  background-color: #005754;
 }*/
 
+.navleft, .navright {
+	float: left;
+	width: 25%;
+	list-style-type: none;
+}
+
+.navright {
+	float: right;
+}
+
 .dashnav {
-    list-style-type: none;
     margin: 0;
     padding: 50px 0px 35px 0px;
     overflow: hidden;
     background-color: #005754;
   }
 
-.dashnav li {
+.navleft li {
     float: left;
   }
+
+	.navright li {
+	    float: right;
+	  }
 
 .dashnav li a {
     /*display: block;*/
