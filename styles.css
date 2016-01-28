@@ -1,3 +1,29 @@
+/*.right i {
+	min-width: 75px;
+}*/
+
+ul.icons {
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0px;
+}
+
+.icons li {
+	margin: 0 10px;
+	padding: 10px;
+	border-radius: 4px;
+	min-width: 65px;
+	display: inline-block;
+}
+
+.right li {
+  margin: 0 10px;
+  border-radius: 4px;
+  min-width: 65px;
+  display: inline-block;
+}
+
+
 .header {
 	background-color: none;
   padding-bottom: 15px ;
@@ -86,7 +112,7 @@
 		 width: 748px;
 	 }
   }
-	
+
 
 
  @media (min-width: 992px) {
@@ -151,12 +177,19 @@
 }
 
 
+@media (min-width: 375px) { /*mobiel/phone*/
+  .hershot {
+    font-size: 0.3125em;
+
+  }
+}
+
 
 @media (min-width: 768px) { /*tablet*/
   .heroshot {
     font-size: 0.6250em;
     width: 60%;
-    
+
   }
 }
 
@@ -286,8 +319,8 @@
 
 }
 
-.fa-youtube-square, .fa-facebook-square, .left.fa-twitter,.fa-camera-retro, .fa-file-o, .fa-picture-o, .fa-link {
-  color: #4f4f4f;
+.fa-youtube-square, .fa-facebook-square, .contain .fa-twitter, .fa-camera-retro, .fa-file-o, .fa-picture-o, .fa-link {
+  color: #5c5c5c;
 }
 
 /******ACCOUNTS*******/
@@ -421,6 +454,7 @@ footer {
 
 
 
+
 /***************Dashboard*************/
 /*.dashheader {
   background-color: #005754; 
@@ -495,3 +529,4 @@ footer {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
   }
+
