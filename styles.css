@@ -174,7 +174,6 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-
 }
 
 
@@ -422,9 +421,6 @@ footer {
 
 
 /***************Dashboard*************/
-/*.dashheader {
-  background-color: #005754;
-}*/
 
 .navleft, .navright {
 	float: left;
@@ -447,9 +443,9 @@ footer {
     float: left;
   }
 
-	.navright li {
-	    float: right;
-	  }
+.navright li {
+	 float: right;
+	}
 
 .dashnav li a {
     /*display: block;*/
@@ -470,7 +466,18 @@ footer {
     background-color: #4CAF50;
 }
 
-.personal, .professional {
+.navmid {
+ width: 50%;
+ position: absolute;
+ margin: 40px 0px 0px 280px;
+}
+
+.navmid li  {
+  float: left;
+  list-style-type: none;
+}
+
+.navmid li a {
   border-radius: 8px;
   border: 3px solid #FFFFFF;
   background-color: none;
@@ -480,32 +487,137 @@ footer {
   padding: 10px 12px;
 }
 
+.mid {
+   padding: 8px 90px;
 
-.name {
-   float: right;
 }
 
+.name {
+  list-style-type: none;
+  padding: 8px 3px;
+  margin: 2px;
+}
 
+/*@media (min-width: 992px) {
+  .mid {
+  
+    
+  }
+}*/
+
+/********************SECOND ROW**********************/
+
+.dashlineleft, .dashlineright {
+  float: left;
+  width: 30%;
+  list-style-type: none;
+}
+
+.dashlineright {
+  float: right;
+}
 
 .secondline {
-    list-style-type: none;
     margin: 0;
     padding: 50px 0px 35px 0px;
     overflow: hidden;
     background-color: red;
   }
 
-.secondline li {
+
+.dashlineleft li {
     float: left;
   }
 
-.dashline li a {
+.dashlineright li {
+    float: right;
+  }
+
+.dashlineleft li a {
     display: block;
-    color: white;
     text-align: center;
-    padding: 0px 20px;
+    padding: 0px 8px;
     text-decoration: none;
+    color: #005754;
     font-size: .875em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
   }
+
+.fill {
+  list-style-type: none;
+  border-radius: 8px;
+  border: 3px solid #005754;
+  background-color: white;
+  padding: 8px 3px;
+  margin: 7px;
+}
+
+.dashlineleft :hover {
+  background-color: #005754;
+  color: white;
+}
+
+.dashlineright li a {
+  list-style-type: none;
+  color: #005754;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: .875em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+
+
+@media (min-width: 992px) {
+  .home {
+    position: absolute;
+    left: 48%;
+    margin-left: -12px;
+    margin-top: 110px;
+    background-color: white;
+    padding: 10px;
+  }
+}
+
+/*******Dropdown Menu********/
+
+/*.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}*/
