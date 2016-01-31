@@ -426,6 +426,7 @@ footer {
 	float: left;
 	width: 25%;
 	list-style-type: none;
+
 }
 
 .navright {
@@ -434,7 +435,7 @@ footer {
 
 .dashnav {
     margin: 0;
-    padding: 50px 0px 35px 0px;
+    padding: 50px 0px 30px 0px;
     overflow: hidden;
     background-color: #005754;
   }
@@ -449,7 +450,7 @@ footer {
 
 .dashnav li a {
     /*display: block;*/
-    color: white;
+    /*color: white;*/
     text-align: center;
     padding: 0px 20px;
     text-decoration: none;
@@ -458,7 +459,15 @@ footer {
     font-weight: 500;
 }
 
-.dashnav li a:hover:not(.active) {
+.navleft li a, .name a {
+   color: white;
+}
+
+.sam a {
+  color: black;
+}
+
+.navleft li a:hover:not(.active), .navright li a:hover:not(.active) {
     color: #ff8b4c;
 }
 
@@ -467,36 +476,38 @@ footer {
 }
 
 .navmid {
- width: 50%;
- position: absolute;
- margin: 40px 0px 0px 280px;
+  width: 35%;
+  position: absolute;
+  margin: 7px 0px 0px 300px;
+  padding: 8px 90px;
 }
 
 .navmid li  {
-  float: left;
+  /*float: left;*/
   list-style-type: none;
+}
+
+.per {
+  float: left;
+}
+
+.fess {
+  float: right;
+  /*margin-left: 220px;*/
 }
 
 .navmid li a {
   border-radius: 8px;
   border: 3px solid #FFFFFF;
   background-color: none;
-  color: none;
+  color: white;
   text-align: center;
   text-decoration: none;
   padding: 10px 12px;
 }
 
-.mid {
-   padding: 8px 90px;
 
-}
 
-.name {
-  list-style-type: none;
-  padding: 8px 3px;
-  margin: 2px;
-}
 
 /*@media (min-width: 992px) {
   .mid {
@@ -521,7 +532,7 @@ footer {
     margin: 0;
     padding: 50px 0px 35px 0px;
     overflow: hidden;
-    background-color: red;
+    background-color: none;
   }
 
 
@@ -574,10 +585,18 @@ footer {
   .home {
     position: absolute;
     left: 48%;
-    margin-left: -12px;
-    margin-top: 110px;
+    margin-left: -35px;
+    margin-top: 60px;
     background-color: white;
-    padding: 10px;
+    height: 90px;
+    width: 60px;
+    background-size: 110px;
+    background-image: url(images/logotoolbar.png);
+    border: 2px solid white;
+    border-radius: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px;
   }
 }
 
