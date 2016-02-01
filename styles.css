@@ -600,43 +600,57 @@ footer {
   }
 }
 
-/*******Dropdown Menu********/
 
-/*.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+/*******Dropdown Menu********/
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.dropbutton {
+    display: inline-block;
+    cursor: pointer;
+    font-size: .875em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.dropbutton {
+  background-color: white;
+  color: #005754;
+}
+
+.dropbutton:hover {
+  background-color: white;
+  color: #005754;
+  border: 2px solid #005754;
+  padding: 1px 10px 1px 1px;
+}
+
+.dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+    background-color: #005754;
+    /*min-width: 160px;*/
+  }
 
-.dropdown-content a {
-    color: black;
+
+.dropdown-menu a {
+    color: #005754;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: block;  
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown-menu :hover {
+  background-color: white;
+  color: #005754;
+  position: absolute;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}*/
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
