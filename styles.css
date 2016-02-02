@@ -603,7 +603,24 @@ footer {
   }
 }
 
-
+@media (min-width: 768px) { /*tablet*/
+  .home {
+    position: absolute;
+    left: 48%;
+    margin-left: -35px;
+    margin-top: 60px;
+    background-color: white;
+    height: 90px;
+    width: 60px;
+    background-size: 110px;
+    background-image: url(images/logotoolbar.png);
+    border: 2px solid white;
+    border-radius: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px;
+  }
+}
 
 /*******Dropdown Menu********/
 
