@@ -571,7 +571,7 @@ footer {
 
 .dashlineright li a {
   list-style-type: none;
-  color: #005754;
+  color: white;
   text-decoration: none;
   padding: 0px 20px;
   font-size: .875em;
@@ -579,6 +579,9 @@ footer {
   font-weight: 500;
 }
 
+.dashlineright .select a {
+  color: #005754;
+}
 
 
 @media (min-width: 992px) {
@@ -601,56 +604,56 @@ footer {
 }
 
 
+
 /*******Dropdown Menu********/
 
+.dropbtn {
+    background-color: white;
+    color: #005754;
+    font-size: .875em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropbutton {
-    display: inline-block;
-    cursor: pointer;
-    font-size: .875em;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-}
-
-.dropbutton {
-  background-color: white;
-  color: #005754;
-}
-
-.dropbutton:hover {
-  background-color: white;
-  color: #005754;
-  border: 2px solid #005754;
-  padding: 1px 10px 1px 1px;
-}
-
-.dropdown-menu {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #005754;
     /*min-width: 160px;*/
-  }
+}
 
-
-.dropdown-menu a {
-    color: #005754;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    background-color: #005754;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;  
+    display: block;
 }
 
-.dropdown-menu :hover {
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
   background-color: white;
   color: #005754;
-  position: absolute;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: #005754;
+    padding: 5px 18px;
+    border: 2px solid #005754;
+}
 
