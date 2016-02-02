@@ -511,8 +511,8 @@ footer {
 
 /*@media (min-width: 992px) {
   .mid {
-  
-    
+
+
   }
 }*/
 
@@ -630,29 +630,40 @@ footer {
     font-size: .875em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
+		padding: 16px;
+		border: 2px solid white;
     cursor: pointer;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+		padding: 12px;
+		float: right;
     position: relative;
     display: inline-block;
 }
 
+.dropbtn {
+	float: right;
+	margin-top: -10px;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    /*min-width: 160px;*/
+		text-align: right;
+		margin-top: 42px;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dashlineright .dropdown-content a {
     color: white;
     background-color: #005754;
-    padding: 12px 16px;
+    padding: 10px 17px;
     text-decoration: none;
     display: block;
+		width: 100px;
+		left: 0;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -670,7 +681,6 @@ footer {
 .dropdown:hover .dropbtn {
     background-color: white;
     color: #005754;
-    padding: 5px 18px;
+    padding: 16px;
     border: 2px solid #005754;
 }
-
