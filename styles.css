@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+	.nomobile {
+		display: none;
+	}
+}
+
 .header {
 	background-color: none;
   padding-bottom: 15px ;
@@ -493,7 +499,7 @@ footer {
 
 .fess {
   float: right;
- 
+
 }
 
 .navmid li a {
@@ -515,7 +521,7 @@ footer {
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .navmid {
     width: 35%;
     position: absolute;
@@ -556,7 +562,7 @@ footer {
     float: right;
   }
 
-.dashlineleft li a {
+/*.dashlineleft li a {
     display: block;
     text-align: center;
     padding: 0px 8px;
@@ -565,21 +571,33 @@ footer {
     font-size: .875em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-  }
+  }*/
 
-.fill {
+li a.fill {
   list-style-type: none;
   border-radius: 8px;
   border: 3px solid #005754;
   background-color: white;
-  padding: 8px 3px;
+  padding: 8px 10px;
   margin: 7px;
+	text-decoration: none;
+	color: #005754;
+	font-size: .875em;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	display: block;
+	text-align: center;
 }
 
-.dashlineleft :hover {
-  background-color: #005754;
+li a.fill:hover {
+	background-color: #005754;
   color: white;
 }
+
+/*.dashlineleft :hover {
+  background-color: #005754;
+  color: white;
+}*/
 
 .dashlineright li a {
   list-style-type: none;
@@ -670,7 +688,7 @@ footer {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
+    /*display: none;*/
 		text-align: right;
 		margin-top: 42px;
 }
@@ -705,5 +723,3 @@ footer {
     padding: 16px;
     border: 2px solid #005754;
 }
-
-
