@@ -475,6 +475,7 @@ footer {
     background-color: #4CAF50;
 }
 
+
 .navmid {
   width: 35%;
   position: absolute;
@@ -483,7 +484,6 @@ footer {
 }
 
 .navmid li  {
-  /*float: left;*/
   list-style-type: none;
 }
 
@@ -493,7 +493,7 @@ footer {
 
 .fess {
   float: right;
-  /*margin-left: 220px;*/
+ 
 }
 
 .navmid li a {
@@ -506,15 +506,27 @@ footer {
   padding: 10px 12px;
 }
 
-
-
-
-/*@media (min-width: 992px) {
-  .mid {
-
-
+@media (min-width: 768px) { /*tablet*/
+  .navmid {
+    width: 50%;
+    position: absolute;
+    margin: 7px 0px 0px 120px;
+    padding: 8px 90px;
   }
-}*/
+}
+
+@media (min-width: 992px) { 
+  .navmid {
+    width: 35%;
+    position: absolute;
+    margin: 7px 0px 0px 300px;
+    padding: 8px 90px;
+  }
+}
+
+
+
+
 
 /********************SECOND ROW**********************/
 
@@ -579,7 +591,7 @@ footer {
   font-weight: 500;
 }
 
-.dashlineright .select a {
+.dashlineright #select a {
   color: #005754;
 }
 
@@ -622,6 +634,9 @@ footer {
   }
 }
 
+
+
+
 /*******Dropdown Menu********/
 
 .dropbtn {
@@ -648,8 +663,14 @@ footer {
 	margin-top: -10px;
 }
 
+#select {
+  margin-top: 18px;
+}
+
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+    display: none;
 		text-align: right;
 		margin-top: 42px;
 }
@@ -684,3 +705,5 @@ footer {
     padding: 16px;
     border: 2px solid #005754;
 }
+
+
