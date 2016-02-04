@@ -611,6 +611,9 @@ li a.fill:hover {
 
 .dashlineright #select a {
   color: #005754;
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 2px;
 }
 
 
@@ -683,12 +686,15 @@ li a.fill:hover {
 
 #select {
   margin-top: 18px;
+  margin-top: 18px;
+  position: absolute;
+  margin-left: 190px;
 }
 
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    /*display: none;*/
+    display: none;
 		text-align: right;
 		margin-top: 42px;
 }
