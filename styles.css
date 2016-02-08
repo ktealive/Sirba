@@ -514,6 +514,44 @@ footer {
   padding: 10px 12px;
 }
 
+/*@media (min-width: 768px) {
+  .tnav {
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tablet {
+      width: 20%;
+      height: 80px;
+      margin-bottom: 0px;
+      list-style-type: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tspace {
+      padding: 40px 0px 0px 0px;
+  }
+}*/
+
+@media (min-width: 768px) and (max-width:988px) {
+  .tnav {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .tablet {
+      width: 20%;
+      height: 80px;
+      margin-bottom: 0px;
+      list-style-type: none;
+  }
+
+  .tspace {
+      padding: 40px 0px 0px 0px;
+  }
+}
+
 @media (min-width: 768px) { /*tablet*/
   .navmid {
     width: 50%;
@@ -531,6 +569,7 @@ footer {
     padding: 8px 90px;
   }
 }
+
 
 
 
@@ -838,7 +877,6 @@ or should I set the images as a background: url in css. Would this be better or 
       padding-bottom: 25%;
    }
 }
-}
 
 
 
@@ -851,15 +889,6 @@ or should I set the images as a background: url in css. Would this be better or 
    }
 } 
 
-/*.mcontain {
-  
-}*/
-
-@media (min-width: 375px) {
-  .mcontain {
-    /*padding: 0px 30px;*/
-    }
-  }
 
 @media (min-width : 768px) {
    /* Tablet view: 2 tiles */
@@ -883,11 +912,15 @@ or should I set the images as a background: url in css. Would this be better or 
    float: left;
 }
 
-.mheader, .fheader /*toolbar container*/ {
+.mheader ,.fheader {
   float: left;
-  background-color: none;
   width: 100%;
 }
+
+/*.fheader {
+  float: left;
+  width: 100%;
+}*/
 
 .mheader p {
   text-align: center;
