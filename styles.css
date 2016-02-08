@@ -1,8 +1,4 @@
-@media (max-width: 768px) {
-	.nomobile {
-		display: none;
-	}
-}
+
 
 .header {
 	background-color: none;
@@ -427,6 +423,12 @@ footer {
 
 
 /***************Dashboard*************/
+@media (max-width: 768px) {
+  .nomobile {
+    display: none;
+  }
+}
+
 
 .navleft, .navright {
 	float: left;
@@ -750,7 +752,6 @@ li a.fill:hover {
    right: 10px;
    top: 10px;
    bottom: 10px;
-   background: #e7e7e7;
    border: 2px solid black;
  }
 
@@ -792,3 +793,96 @@ or should I set the images as a background: url in css. Would this be better or 
    width: 12%;
    top: 91%; 
 }
+
+
+@media (max-width : 760px) {
+   /* Smartphone view: 1 tile */
+   .content-item {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+} 
+
+@media (min-width : 768px) {
+   /* Tablet view: 2 tiles */
+   .content-item {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+
+@media (min-width: 992px)  {
+  .content-item {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+}
+
+
+
+/*******************MOBILE******************/
+
+@media (max-width : 760px) {
+   /* Smartphone view: 1 tile */
+   .dashmobile {
+      width: 100%;
+      
+   }
+} 
+
+@media (min-width : 768px) {
+   /* Tablet view: 2 tiles */
+   .dashmobile {
+      display: none;
+   }
+}
+
+@media (min-width: 992px)  {
+  .dashmobile {
+      display: none;
+   }
+}
+
+ /*@media (min-width: 480px) {
+   .mcontain {
+     width: 460px;
+   }
+  }*/
+
+.mobilebar /*background header*/ { 
+   width: 100%; 
+   background-color: #005754;
+   color: none;
+   overflow: hidden;
+   float: left;
+}
+
+.mheader /*toolbar container*/ {
+  float: left;
+  background-color: none;
+  width: 100%;
+}
+
+.mheader p {
+  text-align: center;
+  color: white;
+}
+
+.mbars {
+  float: left;
+   /*position: absolute;
+   top: 1%;*/
+}
+
+.fa-bars {
+  margin-top: 30%;
+}
+
+.logobutton {
+  float: right;
+  /*position: absolute;
+  left: 90%;*/
+}
+
+
