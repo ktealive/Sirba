@@ -611,13 +611,34 @@ li a.fill:hover {
   font-weight: 500;
 }
 
+
+
+
+@media (min-width: 768px) { /*tablet*/
+  .dashlineleft {
+    float: left;
+    width: 35%;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 768px) { /*tablet*/
+  .dashlineright #select a {
+    color: #005754;
+    position: absolute;
+    margin-left: -180px;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 992px) { 
 .dashlineright #select a {
   color: #005754;
   position: absolute;
   margin-left: -60px;
   margin-top: 2px;
+  }
 }
-
 
 @media (min-width: 992px) {
   .home {
@@ -826,10 +847,19 @@ or should I set the images as a background: url in css. Would this be better or 
 @media (max-width : 760px) {
    /* Smartphone view: 1 tile */
    .dashmobile {
-      width: 100%;
-      
+      width: 100%;   
    }
 } 
+
+/*.mcontain {
+  
+}*/
+
+@media (min-width: 375px) {
+  .mcontain {
+    /*padding: 0px 30px;*/
+    }
+  }
 
 @media (min-width : 768px) {
    /* Tablet view: 2 tiles */
@@ -844,11 +874,6 @@ or should I set the images as a background: url in css. Would this be better or 
    }
 }
 
- /*@media (min-width: 480px) {
-   .mcontain {
-     width: 460px;
-   }
-  }*/
 
 .mobilebar /*background header*/ { 
    width: 100%; 
@@ -858,7 +883,7 @@ or should I set the images as a background: url in css. Would this be better or 
    float: left;
 }
 
-.mheader /*toolbar container*/ {
+.mheader, .fheader /*toolbar container*/ {
   float: left;
   background-color: none;
   width: 100%;
@@ -871,8 +896,6 @@ or should I set the images as a background: url in css. Would this be better or 
 
 .mbars {
   float: left;
-   /*position: absolute;
-   top: 1%;*/
 }
 
 .fa-bars {
@@ -881,8 +904,66 @@ or should I set the images as a background: url in css. Would this be better or 
 
 .logobutton {
   float: right;
-  /*position: absolute;
-  left: 90%;*/
+}
+
+.features /*background header*/ { 
+   width: 100%; 
+   background-color: #dfdfdf;
+   /*border: 2px solid #005754;*/
+   color: none;
+   overflow: hidden;
+   float: left;
+   padding: 10px 0px;
+}
+
+.mar {
+  margin: 0px 10px 0px 15px;
+}
+
+.plus, .share {
+  float: right;
+}
+
+.fa-search, .fa-plus, .fa-share-alt-square {
+  color: #005754;
 }
 
 
+/*********Bar Menu*********/
+
+/* Dropdown Content (Hidden by Default) */
+.barmenu {
+    display: none;
+    text-align: left;
+    margin-top: 45px;
+}
+
+/* Links inside the dropdown */
+.barmenu a {
+    color: white;
+    background-color: #a5a5a5;
+    padding: 10px 17px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    left: 0;
+}
+
+/* Change color of dropdown links on hover */
+.barmenu a:hover {
+  background-color: white;
+  color: #005754;
+}
+
+/* Show the dropdown menu on hover */
+.mbars:hover .barmenu {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.mbars:hover {
+    background-color: white;
+    color: #005754;
+    padding: 16px;
+    border: 2px solid #005754;
+}*/
