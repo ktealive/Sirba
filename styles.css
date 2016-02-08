@@ -929,11 +929,12 @@ or should I set the images as a background: url in css. Would this be better or 
 
 .mbars {
   float: left;
+  margin-top: 10px;
 }
 
-.fa-bars {
-  margin-top: 30%;
-}
+/*.fa-bars {
+  
+}*/
 
 .logobutton {
   float: right;
