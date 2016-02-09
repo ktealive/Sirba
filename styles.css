@@ -720,7 +720,7 @@ li a.fill:hover {
 
 
 
-/*******Dropdown Menu********/
+/*******Filter Dropdown Menu********/
 
 .dropbtn {
     background-color: white;
@@ -739,6 +739,7 @@ li a.fill:hover {
 		float: right;
     position: relative;
     display: inline-block;
+    z-indez: 99;
 }
 
 .dropbtn {
@@ -759,6 +760,7 @@ li a.fill:hover {
     display: none;
 		text-align: right;
 		margin-top: 42px;
+    /*position: absolute;*/
 }
 
 /* Links inside the dropdown */
