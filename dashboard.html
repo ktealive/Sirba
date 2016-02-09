@@ -20,7 +20,7 @@
 <!--HEADER-->
 
 	<a href="#"><div class="home">
-		<!--<img src="images/logotoolbar.png" width="40%"/>-->
+		<!--image logo-->
 	</div></a>
 
 	<nav class="dashnav nomobile tnav">
@@ -46,40 +46,12 @@
 
 
 <!--SECONDLINE-->
-
-
-
-<div class="secondline nomobile">
-	<div class="container">
-		<ul class="dashlineleft">
-			<li><a href="#" class="fill">Add</a></li>
-		  <li><a href="#" class="fill">Share</a></li>
-		  <li><a href="#" class="fill">Create</a></li>
-		</ul>
-
-		<ul class="dashlineright">
-			<li class="dropdown">
-  				<span class="dropbtn">Filter</span>
-				  <div class="dropdown-content">
-				    <a href="#">Docs</a>
-				    <a href="#">Images</a>
-				    <a href="#">Links</a>
-				    <a href="#">Albums</a>
-					<a href="#">Folders</a>
-					<a href="#">Favorites</a>
-				  </div>
-			</li>
-			<li id="select"><a href="#">Collaborators</a></li>
-		</ul>
-	</div>
-</div>
-
+<!--moved to Grid-->
 
 
 <!--MOBILE-->
 
 <div class="dashmobile">
-	<div class="mobilebar"> <!--header-->
 		<div class="container">
 			<div class="mheader">
 				<a href="#" class="mbars"><i class="fa fa-bars fa-2x"></i>
@@ -102,21 +74,20 @@
 				<p>Personal</p>
 			</div>
 		</div>
-	</div>
 
-	<div class="features"> <!--header-->
-		<div class="container">
-			<div class="fheader">
-				<a href="#" class="search"><i class="fa fa-search fa-2x"></i></a>
-				<a href="#" class="mar plus"><i class="fa fa-plus fa-2x"></i></a>
-				<a href="#" class="mar share"><i class="fa fa-share-alt-square fa-2x"></i></a>
+		<div class="mobilebar"> <!--header-->
+		</div>
+
+		<div class="features"> <!--header-->
+			<div class="container">
+				<div class="fheader">
+					<a href="#" class="search"><i class="fa fa-search fa-2x"></i></a>
+					<a href="#" class="mar plus"><i class="fa fa-plus fa-2x"></i></a>
+					<a href="#" class="mar share"><i class="fa fa-share-alt-square fa-2x"></i></a>
+				</div>
 			</div>
 		</div>
-	</div>
-
-</div>
-
-
+</div> <!--dashmobile-->
 
 
 
@@ -124,17 +95,32 @@
 <!--Grid-->
 
 <div class="container">
-	<!--<li class="dropdown">
-  				<span class="dropbtn">Filter</span>
-				  <div class="dropdown-content">
-				    <a href="#">Docs</a>
-				    <a href="#">Images</a>
-				    <a href="#">Links</a>
-				    <a href="#">Albums</a>
+
+	<div class="container">
+		<ul class="dashlineleft nomobile">
+			<li><a href="#" class="fill">Add</a></li>
+			<li><a href="#" class="fill">Share</a></li>
+			<li><a href="#" class="fill">Create</a></li>
+		</ul>
+
+		<ul class="dashlineright nomobile">
+			<li class="dropdown">
+					<span class="dropbtn">Filter</span>
+					<div class="dropdown-content">
+						<a href="#">Docs</a>
+						<a href="#">Images</a> 
+						<a href="#">Links</a>
+						<a href="#">Albums</a>
 					<a href="#">Folders</a>
 					<a href="#">Favorites</a>
-				  </div>
-			</li>-->
+					</div>
+			</li>
+			<li id="select"><a href="#">Collaborators</a></li>
+		</ul>
+	</div>
+
+<!--GRID IMAGES-->
+
        <div class="content-item">
          <div class="item-box">
          	<!--<a href="#"><img src="images/bobby.jpg"></a>-->
@@ -146,7 +132,7 @@
          		<div class="center">Bobby</div>
          </div>
        </div>
-       
+
        <div class="content-item">
          <div class="item-box">
          	<img src="images/heart.jpg"></a>
@@ -158,7 +144,7 @@
        </div>
        <div class="content-item">
          <div class="item-box">
-        
+
          </div>
        </div>
        <div class="content-item">
@@ -188,6 +174,7 @@
        <div class="content-item">
          <div class="item-box">
          </div>
-       
        </div>
-     </div>
+     
+
+</div>
