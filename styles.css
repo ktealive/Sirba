@@ -579,20 +579,21 @@ footer {
 
 .dashlineleft, .dashlineright {
   float: left;
-  width: 30%;
+  width: 45%;
   list-style-type: none;
+	margin-bottom: 50px;
 }
 
 .dashlineright {
   float: right;
 }
 
-.secondline {
+/*.secondline {
     margin: 0;
     padding: 50px 0px 35px 0px;
     overflow: hidden;
     background-color: none;
-  }
+  }*/
 
 
 .dashlineleft li {
@@ -619,8 +620,8 @@ li a.fill {
   border-radius: 8px;
   border: 3px solid #005754;
   background-color: white;
-  padding: 8px 10px;
-  margin: 7px;
+	padding: 11px 10px;
+	margin: 10px 8px 12px 0px;
 	text-decoration: none;
 	color: #005754;
 	font-size: .875em;
@@ -670,7 +671,7 @@ li a.fill:hover {
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 .dashlineright #select a {
   color: #005754;
   position: absolute;
@@ -736,6 +737,7 @@ li a.fill:hover {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
 		padding: 12px;
+		margin-right: 12px;
 		float: right;
     position: relative;
     display: inline-block;
@@ -748,9 +750,7 @@ li a.fill:hover {
 
 #select {
   margin-top: 18px;
-  margin-top: 18px;
-  position: absolute;
-  margin-left: 190px;
+  margin-right: 70px;
 }
 
 
@@ -759,15 +759,18 @@ li a.fill:hover {
     display: none;
 		text-align: right;
 		margin-top: 42px;
-}
+		position: absolute;
+		right: 12px;
+		z-index: 10;
+	}
 
 /* Links inside the dropdown */
 .dashlineright .dropdown-content a {
     color: white;
     background-color: #005754;
+		display: block;
     padding: 10px 17px;
     text-decoration: none;
-    display: block;
 		width: 100px;
 		left: 0;
 
@@ -780,7 +783,7 @@ li a.fill:hover {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover > .dropdown-content {
     display: block;
 }
 
@@ -798,7 +801,7 @@ li a.fill:hover {
 /*******GRID********/
 
 .content-item {
-   width: 25%; 
+   width: 25%;
    padding-bottom: 25%;
    color: #FFF;
    position: relative;
@@ -807,7 +810,7 @@ li a.fill:hover {
 }
 
  .item-box {
-   position: absolute; 
+   position: absolute;
    left: 10px;
    right: 10px;
    top: 10px;
@@ -815,12 +818,12 @@ li a.fill:hover {
    border: 2px solid black;
  }
 
-/*I wanted to ask if the method I'm used (using <img> in html) to apply the images is okay 
+/*I wanted to ask if the method I'm used (using <img> in html) to apply the images is okay
 or should I set the images as a background: url in css. Would this be better or is there a better way?*/
 
  .item-box img {
   width: 100%;
-  height: 100% 
+  height: 100%
  }
 
  .center {
@@ -828,7 +831,7 @@ or should I set the images as a background: url in css. Would this be better or 
    float: left;
    text-align: center;
    width: 100%;
-   top: 87%; 
+   top: 87%;
 }
 
 .fa-pencil-square-o, .fa-bars, .fa-heart-o {
@@ -839,19 +842,19 @@ or should I set the images as a background: url in css. Would this be better or 
 .gridtop {
    position: absolute;
    width: 98%;
-   top: 3%; 
+   top: 3%;
 }
 
 .gridbar {
   position: absolute;
    width: 97%;
-   top: 91%; 
+   top: 91%;
 }
 
 .gridleft {
   position: absolute;
    width: 12%;
-   top: 91%; 
+   top: 91%;
 }
 
 
@@ -861,7 +864,7 @@ or should I set the images as a background: url in css. Would this be better or 
       width: 100%;
       padding-bottom: 100%;
    }
-} 
+}
 
 @media (min-width : 768px) {
    /* Tablet view: 2 tiles */
@@ -885,9 +888,9 @@ or should I set the images as a background: url in css. Would this be better or 
 @media (max-width : 760px) {
    /* Smartphone view: 1 tile */
    .dashmobile {
-      width: 100%;   
+      width: 100%;
    }
-} 
+}
 
 
 @media (min-width : 768px) {
@@ -904,8 +907,8 @@ or should I set the images as a background: url in css. Would this be better or 
 }
 
 
-.mobilebar /*background header*/ { 
-   width: 100%; 
+.mobilebar /*background header*/ {
+   width: 100%;
    background-color: #005754;
    color: none;
    overflow: hidden;
@@ -933,15 +936,15 @@ or should I set the images as a background: url in css. Would this be better or 
 }
 
 /*.fa-bars {
-  
+
 }*/
 
 .logobutton {
   float: right;
 }
 
-.features /*background header*/ { 
-   width: 100%; 
+.features /*background header*/ {
+   width: 100%;
    background-color: #dfdfdf;
    /*border: 2px solid #005754;*/
    color: none;
