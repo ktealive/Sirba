@@ -54,7 +54,7 @@
 <div class="dashmobile">
 		<div class="container">
 			<div class="mheader">
-				<a href="#" class="mbars"><i class="fa fa-bars fa-2x"></i>
+				<a href="#1" class="mbars"><i id="mobiledrop" class="fa fa-bars fa-2x"></i></a>
 				<div class="barmenu">
 				    <a href="#" class="shade">Collaborators</a>
 				    <a href="#">Account</a>
@@ -68,7 +68,9 @@
 					<a href="#">Favorites</a>
 					<a href="#">Log Out</a>
 				</div>
-				</a>
+				<div class="apples">
+					<h1>this is a test</h1>
+				</div>
 
 				<a href="#" class="logobutton"><img src="images/selflogo.png" width="50px"></a>
 				<p>Personal</p>
@@ -108,7 +110,7 @@
 					<span class="dropbtn">Filter</span>
 					<div class="dropdown-content">
 						<a href="#">Docs</a>
-						<a href="#">Images</a> 
+						<a href="#">Images</a>
 						<a href="#">Links</a>
 						<a href="#">Albums</a>
 					<a href="#">Folders</a>
@@ -175,6 +177,21 @@
          <div class="item-box">
          </div>
        </div>
-     
+		 </div>
 
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" charset="utf-8"></script>
+
+<script>
+	$('.fa-bars').on('click', function(){
+		$('.barmenu').toggle();
+	});
+
+</script>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
