@@ -934,6 +934,9 @@ or should I set the images as a background: url in css. Would this be better or 
 .mbars {
   float: left;
   margin-top: 10px;
+	display: block;
+	background: none;
+	z-index: 100;
 }
 
 
@@ -989,6 +992,10 @@ or should I set the images as a background: url in css. Would this be better or 
     left: 0;
 }
 
+.apples {
+	display: none;
+}
+
 /* Change color of dropdown links on hover */
 .barmenu a:hover {
   background-color: white;
@@ -999,4 +1006,3 @@ or should I set the images as a background: url in css. Would this be better or 
 .mbars:hover > .barmenu {
     display: block;
 }
-
