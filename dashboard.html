@@ -19,24 +19,181 @@
 
 <!--HEADER-->
 
-<div class="dashheader">
-	<div class="container">
-		<ul class="dashnav">
-		  <li><a href="#">Upgrade</a></li>
-		  <li><a href="#">Account</a></li>
-		  <li class="personal"><a href="#">Personal</a></li>
-		  <li class="professional"><a href="#">Professional</a></li>
-		  <li class="name"><a href="#">Hi Samantha</a></li>
-		  <li class="name"><a href="#">Log Out</a></li>
-		</ul>
+	<a href="#"><div class="home">
+		<!--image logo-->
+	</div></a>
+
+	<nav class="dashnav nomobile tnav">
+		<div class="container">
+
+		<ul class="navmid">
+			 	<li class="mid per"><a href="#">Personal</a></li>
+			  	<li class="mid fess"><a href="#">Professional</a></li>
+			</ul>
+
+			<ul class="navleft tablet">
+			  <li class=""><a href="#">Upgrade</a></li>
+			  <li class="tspace"><a href="#">Account</a></li>
+			</ul>
+
+			<ul class="navright tablet">
+				<li class="name"><a href="#">Log Out</a></li>
+			  	<li class="name sam tspace"><a href="#">Hi Samantha</a></li>
+			</ul>
+		</div>
+	</nav>
+
 
 
 <!--SECONDLINE-->
+<!--moved to Grid-->
 
-<div class="secondline">
+
+<!--MOBILE-->
+
+<div class="dashmobile">
+		<div class="container">
+			<div class="mheader">
+				<a href="#1" class="mbars"><i id="mobiledrop" class="fa fa-bars fa-2x"></i></a>
+				<div class="barmenu">
+				    <a href="#" class="shade">Collaborators</a>
+				    <a href="#">Account</a>
+				    <a href="#">Update</a>
+				    <a href="#" class="shade">Filter</a>
+					<a href="#">Docs</a>
+					<a href="#">Images</a>
+					<a href="#">Links</a>
+					<a href="#">Albums</a>
+					<a href="#">Folders</a>
+					<a href="#">Favorites</a>
+					<a href="#">Log Out</a>
+				</div>
+				<div class="apples">
+					<h1>this is a test</h1>
+				</div>
+
+				<a href="#" class="logobutton"><img src="images/selflogo.png" width="50px"></a>
+				<p>Personal</p>
+			</div>
+		</div>
+
+		<div class="mobilebar"> <!--header-->
+		</div>
+
+		<div class="features"> <!--header-->
+			<div class="container">
+				<div class="fheader">
+					<a href="#" class="search"><i class="fa fa-search fa-2x"></i></a>
+					<a href="#" class="mar plus"><i class="fa fa-plus fa-2x"></i></a>
+					<a href="#" class="mar share"><i class="fa fa-share-alt-square fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
+</div> <!--dashmobile-->
+
+
+
+
+<!--Grid-->
+
+<div class="container">
+
 	<div class="container">
-		<ul class="dashline">
-			<li><a href="#">Add</a></li>
-		  	<li><a href="#">Share</a></li>
-		  	<li><a href="#">Create</a></li>
-		</ul>  	
+
+		<ul class="dashlineleft nomobile">
+			<li><a href="#" class="fill">Add</a></li>
+			<li><a href="#" class="fill">Share</a></li>
+			<li><a href="#" class="fill">Create</a></li>
+		</ul>
+
+		<ul class="dashlineright nomobile">
+			<li class="dropdown">
+					<span class="dropbtn">Filter</span>
+					<div class="dropdown-content">
+						<a href="#">Docs</a>
+						<a href="#">Images</a>
+						<a href="#">Links</a>
+						<a href="#">Albums</a>
+					<a href="#">Folders</a>
+					<a href="#">Favorites</a>
+					</div>
+			</li>
+			<li id="select"><a href="#">Collaborators</a></li>
+		</ul>
+	</div>
+
+<!--GRID IMAGES-->
+
+       <div class="content-item">
+         <div class="item-box">
+         	<!--<a href="#"><img src="images/bobby.jpg"></a>-->
+         	<!--<div class="bobby">-->
+         	<img src="images/bobby.jpg">
+         		<a href="#" class="gridtop"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+         		<a href="#" class="gridbar"><i class="fa fa-bars fa-lg"></i></a>
+         		<a href="#" class="gridleft"><i class="fa fa-heart-o fa-lg"></i></a>
+         		<div class="center">Bobby</div>
+         </div>
+       </div>
+
+       <div class="content-item">
+         <div class="item-box">
+         	<img src="images/heart.jpg"></a>
+         		<a href="#" class="gridtop"><i class="fa fa-pencil-square-o fa-lg"></i></a>
+         		<a href="#" class="gridbar"><i class="fa fa-bars fa-lg"></i></a>
+         		<a href="#" class="gridleft"><i class="fa fa-heart-o fa-lg"></i></a>
+         		<div class="center">Project Green</div>
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+       <div class="content-item">
+         <div class="item-box">
+         </div>
+       </div>
+		 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" charset="utf-8"></script>
+
+<script>
+	$('.fa-bars').on('click', function(){
+		$('.barmenu').toggle();
+	});
+
+</script>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
+
