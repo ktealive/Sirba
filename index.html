@@ -26,8 +26,8 @@
 
 
 		<ul class="click">
-			<li id="round"><a href="#">Sign Up</a></li>
-			<li id="space"><a href="#">Sign In</a></li>
+			<li id="round" class="signupprocess"><a href="#">Sign Up</a></li>
+			<li id="space"><a href="/dashboard.html">Sign In</a></li>
 		</ul>
 	</div>
 </div>
@@ -40,7 +40,7 @@
 		<div class="heroshot">
 			<img src="images/logoclear.png" width="20%"/>
 			<h1>Sirba allows you to store and share your most cherished memories with family and friends</h1>
-			<button class="button">Sign Up</button>
+			<button class="button" class="signupprocess">Sign Up</button>
 		</div>
 	</div>
 
@@ -145,6 +145,32 @@
 		    </div>
 		  </div> <!--container-->
 	</footer>
+
+	<div id="signup">
+		<form action="#"> <!--# is a placeholder for the page that holds info-->
+		  <input type="text" name="Email" value="E-mail Address">
+		  <br><br>
+		  <input type="text" name="Password" value="Create Password">
+		  <br><br>
+		  <input type="checkbox" name="device checkbox" value="Device">Remember me on this device <br><br>
+		</form>
+		<a href="/dashboard.html"><input type="submit" value="Sign In"></a>
+		<p class="cancel"><a href="#">Cancel</a></p>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" charset="utf-8"></script>
+
+	<script>
+		$('.signupprocess').on('click', function(){
+			$('#signup').css('display', 'block');
+		});
+
+		$('.cancel').on('click', function(){
+			$('#signup').css('display', 'none');
+		});
+
+	</script>
 
 
 	</body>
