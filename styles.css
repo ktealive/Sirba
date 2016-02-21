@@ -1,10 +1,60 @@
+input[type=text], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #005754;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #003130;
+}
+
+#signup {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+}
+
 #signup {
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 100vh;
-	background-color: rgba(255, 0, 0, 0.5);
+	height: 80vh;
+	background-color: rgba(145, 145, 145, 0.7); /*color,opacity*/
 }
+
+.cancel a {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  background-color: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.cancel a:hover {
+  color: white;
+}
+
+/********************Sign Up Above**********************/
+
+
 
 .header {
 	background-color: none;
