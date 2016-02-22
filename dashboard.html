@@ -68,9 +68,7 @@
 					<a href="#">Favorites</a>
 					<a href="#">Log Out</a>
 				</div>
-				<div class="apples">
-					<h1>this is a test</h1>
-				</div>
+				
 
 				<a href="#" class="logobutton"><img src="images/selflogo.png" width="50px"></a>
 				<p>Personal</p>
@@ -180,17 +178,19 @@
        </div>
 		 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" charset="utf-8"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" charset="utf-8"></script>-->
 
 <script>
-	$('.fa-bars').on('click', function(){
-		$('.barmenu').toggle();
-	});
+	/*$('.fa-bars').on('click', function(){
+		$('.barmenu').toggleClass();
+	});*/
 
 </script>
 
 <script>
-
+ 	$("#mobiledrop").click(function() {
+         $(".barmenu").toggleClass("open", 200);
+     });
 
 </script>
 
