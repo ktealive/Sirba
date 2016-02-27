@@ -56,10 +56,10 @@
 			<div class="mheader">
 				<a href="#1" class="mbars"><i id="mobiledrop" class="fa fa-bars fa-2x"></i></a>
 				<div class="barmenu">
-				    <a href="#" class="shade">Collaborators</a>
+				    <a href="#" id="shade">Collaborators</a>
 				    <a href="#">Account</a>
 				    <a href="#">Update</a>
-				    <a href="#" class="shade">Filter</a>
+				    <a href="#" id="shade">Filter</a>
 					<a href="#">Docs</a>
 					<a href="#">Images</a>
 					<a href="#">Links</a>
@@ -68,7 +68,7 @@
 					<a href="#">Favorites</a>
 					<a href="#">Log Out</a>
 				</div>
-				
+
 
 				<a href="#" class="logobutton"><img src="images/selflogo.png" width="50px"></a>
 				<p>Personal</p>
@@ -187,11 +187,14 @@
 
 </script>
 
+
+
 <script>
  	$("#mobiledrop").click(function() {
-         $(".barmenu").toggleClass(".open", 200);
-     });
-
+		// console.log('working');
+		$(".barmenu").toggleClass("backhook", 200);
+		$(".barmenu").toggleClass("open", 200);
+  	});
 </script>
 
 </body>
