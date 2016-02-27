@@ -1048,7 +1048,7 @@ or should I set the images as a background: url in css. Would this be better or 
 
 /* Mobile Dropdown Menu (Hidden by Default) */
 .barmenu {
-    /*display: none;*/
+    display: none;
     text-align: left;
     margin-top: 45px;
     position: absolute;
@@ -1064,9 +1064,9 @@ or should I set the images as a background: url in css. Would this be better or 
      -moz-transform: translate(-280px,0); /** Firefox **/
 }
 
-.barmenu a.open {
+.barmenu .open {
    display:block;
-   /*width:280px;*/
+   width:280px;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
