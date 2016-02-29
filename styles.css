@@ -1,3 +1,6 @@
+body { background-color: red;
+  }
+
 input[type=text], select {
     width: 60%;
     padding: 12px 20px;
